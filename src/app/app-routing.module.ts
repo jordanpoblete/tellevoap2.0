@@ -31,6 +31,14 @@ const routes: Routes = [
     path: 'pasaj',
     loadChildren: () => import('./pasaj/pasaj.module').then( m => m.PasajPageModule)
   },
+  {
+    path: 'crud',
+    loadChildren: () => import('./crud/crud.module').then( m => m.CrudPageModule)
+  },
+  {
+    path: 'registrar',
+    loadChildren: () => import('./registrar/registrar.module').then( m => m.RegistrarPageModule)
+  },
 ];
 
 @NgModule({
