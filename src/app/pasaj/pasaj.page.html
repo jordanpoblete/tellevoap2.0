@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Pasajero</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <h4 class="centrado">Bienvenido [Nombre de usuario]</h4>
+  <h5 class="margen" >Pasajero</h5>
+
+  <ion-card class="card1">
+    <ion-card-content>
+
+      <ion-list >
+        <ion-item  *ngFor="let c of conductor1">
+          
+          <ion-label color="dark" class="lista">
+            Conductor: {{c.conductor}} <br>
+            Destino: {{c.destino}} <br>
+            Precio: {{c.precio}} <br>
+            Cantidad: {{c.cantidad}}
+          </ion-label>
+          <ion-checkbox class="check" color="dark"></ion-checkbox>
+
+        </ion-item>
+      </ion-list>
+
+    </ion-card-content>
+  </ion-card>
+
+  <div class="centrado">
+    <ion-button color="light" [routerLink]="['/home']"> Solicitar</ion-button>
+  </div>
+ 
+  <div class="centrado">
+    <h1>Mapa</h1>
+  </div>
+    <div id="map"></div>
+    
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <div class="centrado">
+      <ion-button color="danger" [routerLink]="['/home']"> Cerrar Sesion</ion-button>
+    </div>
+  </ion-toolbar>
+</ion-footer>

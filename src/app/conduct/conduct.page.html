@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Conductor</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content>
+
+  <h4 class="centrado">Bienvenido [Nombre de usuario]</h4>
+  <h5 class="margen">Conductor</h5>
+
+  <ion-card>
+    <ion-item>
+      <ion-icon color="dark" name="car-outline" slot="start"></ion-icon>
+      <ion-label color="dark">Información de Viaje</ion-label>
+    </ion-item>
+  
+    <ion-card-content>
+      <ion-item>
+        <ion-label color="dark">Destino: </ion-label>
+        <ion-input color="dark" ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label color="dark">Precio: </ion-label>
+        <ion-input color="dark"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label color="dark">Capacidad: </ion-label>
+        <ion-input color="dark"></ion-input>
+      </ion-item>
+
+
+    
+    </ion-card-content>
+  </ion-card>
+    
+  <div class="centrado">
+    <ion-button color="light" [routerLink]="['/home']"> Ofrecer</ion-button>
+  </div>
+  <div class="centrado">
+    <h1>Mapa</h1>
+  </div>
+    <div id="map"></div>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <div class="centrado">
+      <ion-button color="danger" [routerLink]="['/home']"> Cerrar Sesion</ion-button>
+    </div>
+  </ion-toolbar>
+</ion-footer>

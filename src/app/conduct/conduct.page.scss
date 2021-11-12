@@ -1,0 +1,58 @@
+
+.rueda{
+    width: 85px;
+    height: 85px;
+    margin-left: 90px;
+    margin-top: 30px;
+  }
+  .centrado{
+    text-align: center;
+  }
+
+.margen{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+.soy{
+    margin-left: 27px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 10px;
+}
+.rec{
+    margin-left: 15px;
+    color: honeydew;
+}
+ion-title{
+  text-align: center;
+  -webkit-text-stroke: 0.5px rgb(245, 245, 245);
+  color: black;
+}
+
+.ripple-parent {
+  position: relative;
+  overflow: hidden;
+}
+
+.ruedaa{
+  width: 85px;
+  height: 85px;
+  margin-left: 90px;
+}
+ion-content {
+  #map {
+    width: 85%;
+    height: 60%;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    opacity: 0;
+    transition: opacity 150ms ease-in;
+    display: block;
+    &.show-map{
+      opacity: 1;
+    }
+  } 
+}
+

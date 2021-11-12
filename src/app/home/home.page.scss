@@ -8,6 +8,7 @@
   transform: translateY(-50%);
 }
 
+
 #container strong {
   font-size: 20px;
   line-height: 26px;
@@ -24,4 +25,32 @@
 
 #container a {
   text-decoration: none;
+}
+
+.ruedaa{
+  width: 100px;
+  height: 100px;
+  margin-left: 85px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+
+.centrado{
+  text-align: center;
+}
+
+.botones{
+  text-align: center;
+  --padding-end: 40px;
+}
+.botones2{
+  text-align: center;
+  --padding-end: 50px;
+}
+
+ion-title{
+  text-align: center;
+  -webkit-text-stroke: 0.5px rgb(245, 245, 245);
+  color: black;
 }

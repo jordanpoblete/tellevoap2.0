@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Conductor</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+  <ion-content>
+    <ion-fab vertical="top" horizontal="start" slot="fixed">
+      <ion-fab-button color="light" [routerLink]="['/home']">
+        <ion-icon name="arrow-back-circle-outline"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+
+
+  <div class="ruedaa">
+      
+  </div>
+
+  <div class="centrado">
+    <h1>Iniciar sesion</h1>
+  </div>
+
+
+  
+  
+  <div class="margen">
+    <ion-button color="light" >
+    
+      <ion-label>Usuario: </ion-label>
+      
+        <ion-input placeholder="ej.ejemplo"></ion-input>
+      
+    </ion-button>
+  </div>
+
+  <div class="margen">
+    <ion-button color="light" >
+    
+      <ion-label>Contraseña: </ion-label>
+      
+        <ion-input placeholder="clave0000" type="password"></ion-input>
+      
+    </ion-button>
+  </div>
+
+
+  <div>
+    <span><a class="rec" [routerLink]="['/recuperar']">Recuperar contraseña</a></span>
+  </div>
+  
+
+  <div class="centrado">
+    <ion-button color="light" [routerLink]="['/conduct']"> Iniciar Sesion</ion-button>
+  </div>
+
+
+  </ion-content>
