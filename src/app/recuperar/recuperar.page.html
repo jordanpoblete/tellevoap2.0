@@ -16,34 +16,35 @@
     
   </div>
 
-<div class="margen">
-  <ion-button color="light" >
+  <div class="margen">
+    <ion-button color="light" >
+    
+      <ion-label>Usuario: </ion-label>
+      
+        <ion-input placeholder="ej.ejemplo" #txtUsuario></ion-input>
+      
+    </ion-button>
+  </div>
   
-    <ion-label>Usuario: </ion-label>
+  <div class="margen">
+    <ion-button color="light" >
     
-      <ion-input placeholder="ej.ejemplo"></ion-input>
-    
-  </ion-button>
-</div>
-
-<div class="margen">
-  <ion-button color="light" >
+      <ion-label>RUT: </ion-label>
+      
+        <ion-input  type="text" placeholder="11222333-4" #txtRut></ion-input>
+      
+    </ion-button>
+  </div>
   
-    <ion-label>RUT: </ion-label>
-    
-      <ion-input  type="email" placeholder="112223334"></ion-input>
-    
-  </ion-button>
-</div>
-
-
-
-
-
-
-
-<div class="centrado">
-  <ion-button color="light" [routerLink]="['/home']"> Recuperar</ion-button>
-</div>
-
-</ion-content>
+  
+  
+  
+  
+  
+  
+  <div class="centrado">
+    <ion-button color="light" (click)="con(txtUsuario, txtRut)"> Recuperar</ion-button>
+  </div>
+  
+  </ion-content>
+  

@@ -24,11 +24,11 @@
   
   
   <div class="margen">
-    <ion-button color="light" >
+    <ion-button color="light">
     
       <ion-label>Usuario: </ion-label>
       
-        <ion-input placeholder="ej.ejemplo"></ion-input>
+        <ion-input placeholder="ej.ejemplo" #txtUsuario></ion-input>
       
     </ion-button>
   </div>
@@ -38,7 +38,7 @@
     
       <ion-label>Contraseña: </ion-label>
       
-        <ion-input placeholder="clave0000" type="password"></ion-input>
+        <ion-input placeholder="clave0000" type="password" #txtClave></ion-input>
       
     </ion-button>
   </div>
@@ -50,8 +50,8 @@
   
 
   <div class="centrado">
-    <ion-button color="light" [routerLink]="['/conduct']"> Iniciar Sesion</ion-button>
+    <ion-button color="light" (click)="con(txtUsuario, txtClave)"  > Iniciar Sesion</ion-button>
   </div>
 
-
+ 
   </ion-content>

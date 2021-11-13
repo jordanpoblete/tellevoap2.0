@@ -19,6 +19,10 @@
     <ion-label position="floating">Clave</ion-label>
     <ion-input type="password" placeholder="*******" #txtClave></ion-input>
   </ion-item>
+  <ion-item>
+    <ion-label position="floating">Rut</ion-label>
+    <ion-input type="text" placeholder="12233233-1" #txtRut></ion-input>
+  </ion-item>
 
   <div *ngIf=usuario>
     <ion-text color="light">
@@ -32,6 +36,13 @@
       <h2 class="ion-text-left">Clave:</h2>
       <h1 class="ion-text-left">{{clave}}</h1>
     </ion-text>
+    <ion-text color="light">
+      <h2 class="ion-text-left">-------------------------------</h2>
+    </ion-text>
+    <ion-text color="light">
+      <h2 class="ion-text-left">Rut:</h2>
+      <h1 class="ion-text-left">{{rut}}</h1>
+    </ion-text>
   </div>
 
   <div *ngIf="lista.length >0">  
@@ -42,6 +53,9 @@
         </ion-item>
         <ion-item>
           <ion-label>Clave : {{item[0].clave}}</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Rut : {{item[0].rut}}</ion-label>
         </ion-item>
       --------------------------------------
       </div>
@@ -54,7 +68,7 @@
 <ion-footer>
   <ion-toolbar>
 
-    <ion-button (click)="agregar(txtUsuario, txtClave)">
+    <ion-button (click)="agregar(txtUsuario, txtClave, txtRut)">
       <ion-icon slot="icon-only" name="add"></ion-icon>
     </ion-button>
 
@@ -66,7 +80,7 @@
       <ion-icon slot="icon-only" name="trash"></ion-icon>
     </ion-button>
 
-    <ion-button (click)="actualizar(txtUsuario, txtClave)">
+    <ion-button (click)="actualizar(txtUsuario, txtClave, txtRut)">
       <ion-icon slot="icon-only" name="repeat"></ion-icon>
     </ion-button>
 

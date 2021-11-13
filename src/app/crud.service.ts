@@ -19,7 +19,7 @@ export class CrudService {
 
   async agregarConKey(key: string, valor: any)
   {
-    await this.storage.set(key, valor);
+    await this.storage.set(key, valor)
   }
 
   async agregar(valor: any)
